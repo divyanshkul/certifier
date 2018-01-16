@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="http://www.patternfly.org/angular-patternfly/grunt-scripts/jquery.js"></script>
     <script src="http://www.patternfly.org/angular-patternfly/grunt-scripts/bootstrap.min.js"></script>
     <script src="http://www.patternfly.org/angular-patternfly/grunt-scripts/d3.js"></script>
@@ -36,7 +37,7 @@
   <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertica">  
     <div class="row col-md-12" >
       <div class="col-md-4"></div>
-      <div class="col-md-4">
+      <div class="entire-form col-md-4">
         <div class="heading mt20">
           <blockquote class="blockquote">
             <p class="mb-0">Certifier</p>
@@ -44,7 +45,7 @@
           </blockquote>
         </div>
         <!-- Individual certificate generator form -->
-        <form class="detail-form" ng-submit="submitForm()">     // Call the submitForm() function
+        <form class="detail-form" ng-submit="submitForm()">     <!-- // Call the submitForm() function -->
           <div class="contents">
             <div class="optionText">
               <h4 class="firstHeading">Enter individual details or</h4>          
@@ -103,7 +104,9 @@
                   </div>
                 </div>
               </div>
-              <button type="submit" id="download" class="btn btn-success btn-lg mt20">Download Certificates</button>
+              <div class="center">
+                <button type="submit" id="download" class="btn btn-success btn-lg mt20">Download Certificates</button>
+              </div>
             </div>          
           </div>
         </form>      

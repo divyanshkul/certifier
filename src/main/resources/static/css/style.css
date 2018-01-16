@@ -71,10 +71,6 @@ form.detail-form {
   margin-top: -10px;
 }
 
-#label-upload {
-  margin-top: 50px;
-}
-
-#download {
-  margin-left: 40px;
+.entire-form {
+  margin-top: -20px;
 }
